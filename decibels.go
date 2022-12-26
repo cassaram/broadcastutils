@@ -15,3 +15,12 @@ Ex: 3.2 dB -> 32
 func DecibelToInt(dB Decibel) int {
 	return int(dB * 10)
 }
+
+/*
+Converts an int to a Decibel with 1 decimal precision
+
+Ex: 32 -> 3.2 dB
+*/
+func IntToDecibel(dB int) Decibel {
+	return Decibel(dB / 10)
+}
